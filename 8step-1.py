@@ -1,10 +1,10 @@
 import numpy as np
-np.set_printoptions(threshold='nan')
+np.set_printoptions(threshold=100000)
 import pandas as pd
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_rows', None)
-pd.set_option('display.width', None)
-pd.set_option('display.max_colwidth', None)
+pd.set_option('display.max_columns', 100000)
+pd.set_option('display.max_rows', 100000)
+pd.set_option('display.width', 100000)
+pd.set_option('display.max_colwidth', 100000)
 
 from dwave.system.samplers import DWaveSampler
 from dwave.system.composites import EmbeddingComposite
